@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body{
+    background-color: #000120;
+    padding-bottom: 5rem;
+}
+
+[hover-card]{
+    position: relative;
+}
+
+[hover-card]:hover::after{
+    content: attr(hover-card);
+    background-color: rgba(211, 211, 211, 0.76);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: max-content;
+    margin-bottom: 1rem;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+nav{
+    background-color: rgba(160, 59, 0, 0.77);
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav .name a:hover{
+    color: red;
+    text-shadow: 0 0 10px black;
+}
+
+nav .name{
+    text-transform: capitalize;
+}
+
+nav .name a{
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: rgb(0, 0, 211);
+    font-size: 25px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.home-container{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.home-container h1{
+    color: red;
+    font-size: 75px;
+}
+
+.home-container h4{
+    color: blue;
+    font-size: 40px;
+}
+
+.home-container img{
+    height: 200px;
+}
+
+.home-container button{
+    margin-top: 1rem;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    width: 200px;
+    border-radius: 50px 10px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.home-container button:hover{
+    background-color: blue;
+    border-radius: 10px 50px;
+    font-size: 40px;
+}
+
+.home-container a:hover button{
+    color: red;
+}
+
+.team-container{
+    text-align: center;
+    margin-left: 40rem;
+    margin-top: 5rem;
+}
+
+.team-container div{
+    background-color: rgb(0, 136, 0);
+    width: 500px;
+    border-radius: 50px 5px;
+    height: fit-content;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    box-shadow: 0 0 10px 5px blue;
+    transition: box-shadow 0.3s ease;
+}
+
+.team-container div:hover{
+    box-shadow: 0 0 10px 10px blue;
+}
+
+.team-container div p, .team-container div h1, .team-container div h3{
+    margin-top: 1rem;
+}
+
+.team-container div img{
+    border-radius: 50%;
+    border: 5px solid lightblue;
+}
+
+.team-container div h1{
+    color: red;
+    font-weight: 750;
+}
+
+.team-container div h3{
+    color: blue;
+}
+
+.team-container p{
+    color: orangered;
+    font-weight: 600;
+}
+
+div.member-socials{
+    all: initial;
+}
+
+div.member-socials i{
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+div.member-socials:hover{
+    all: initial;
+}
+
+div.member-socials i.social-yt{
+    color: red;
+}
+
+div.member-socials i.social-disc{
+    color: blue;
+}
+
+.contact-container{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-container h1{
+    margin-top: 3rem;
+    font-size: 75px;
+    color: red;
+}
+
+.contact-container li{
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 40px;
+}
+
+.contact-container li a{
+    transition: all 0.3s ease;
+}
+
+.contact-container li a:hover{
+    text-decoration: none;
+    color: blue;
+}

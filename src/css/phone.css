@@ -1,0 +1,65 @@
+nav{
+    display: none;
+}
+
+.menu-toggle{
+    display: flex;
+    margin-right: 1rem;
+    position: sticky;
+    top: 1rem;
+    justify-content: right;
+}
+
+.menu-toggle div.bar{
+    background-color: white;
+    width: 35px;
+    height: 7px;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+
+.mobile-menu{
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+
+.mobile-menu h1 a{
+    color: red;
+    text-decoration: none;
+}
+
+.mobile-menu ul{
+    list-style: none;
+}
+
+.mobile-menu ul li{
+    margin-top: 1rem;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.menu-close{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    margin-right: 2rem;
+    justify-content: right;
+}
+
+.mobile-menu.active{
+    display: block;
+}
+
+.menu-btn.active{
+    display: none;
+}
